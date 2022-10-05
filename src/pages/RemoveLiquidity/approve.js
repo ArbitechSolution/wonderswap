@@ -108,7 +108,7 @@ export function approveRemoveLiquidity(amount, address, account) {
     console.log('amount', address)
     let contractOf = new web3.eth.Contract(approveAbi, address)
     console.log('contractOf', contractOf)
-    contractOf.methods.approve('0x45DB4D02d3353148337Cf682c45a5CBAf07CB99e', amount).send({ from: account })
+    contractOf.methods.approve('0x98E43d71De3159E18aA5447E6433FDbCe6575Cd8', amount).send({ from: account })
   } catch (error) {
     console.log('error', error)
   }
