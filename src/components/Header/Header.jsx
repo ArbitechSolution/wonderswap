@@ -96,7 +96,7 @@ function Header() {
           {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
           <>
             <Button className="menu" variant="primary" onClick={handleShow}>
-              <FiMenu></FiMenu>
+              <FiMenu size={30}>  </FiMenu>
             </Button>
 
             <Offcanvas className="canvas" show={show} onHide={handleClose} backdrop="static">
