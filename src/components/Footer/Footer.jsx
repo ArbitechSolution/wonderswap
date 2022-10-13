@@ -18,7 +18,7 @@ function Footer() {
 									<img src="logo.png" alt="" />
 								</Link>
 								<p>Our community is building a comprehensive decentralized trading platform for the future of finance. Join us!</p>
-								<ul className='socialIcons'>
+								<ul className='socialIcons justify-content-center'>
 									<li><a href="#"><BsTwitter></BsTwitter></a></li>
 									<li><a href="#"><AiOutlineInstagram></AiOutlineInstagram></a></li>
 									<li><a href="#"><BsDiscord></BsDiscord></a></li>
@@ -28,7 +28,7 @@ function Footer() {
 						</div>
 						<div class="col-md-8 mt-5">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-6  mt-2">
 									<div class="footer_col2">
 										<h2>Useful Link</h2>
 										<ul>
@@ -39,7 +39,7 @@ function Footer() {
 										</ul>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-6 mt-2">
 									<div class="footer_col2">
 										<h2>Useful Link</h2>
 										<ul>
@@ -48,7 +48,7 @@ function Footer() {
 										</ul>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-6 mt-2">
 									<div class="footer_col2">
 										<h2>Swap</h2>
 										<ul>
@@ -57,7 +57,7 @@ function Footer() {
 										</ul>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-6 mt-2">
 									<div class="footer_col2">
 										<h2>Help</h2>
 										<ul>

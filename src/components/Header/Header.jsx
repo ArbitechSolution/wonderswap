@@ -111,32 +111,32 @@ function Header() {
               <Offcanvas.Body className="canvas_body">
                 <Nav>
                   {/* <Nav.Link href="#deets" className='gift gift3 m-0'><FaGift className='gift'></FaGift> How To Win $100+</Nav.Link> */}
-                  <Nav.Link href="#deets" className="gift3" onClick={linkShow}>
+                  <Nav.Link href="#swap" className="gift3" onClick={linkShow}>
                     <Link to="/swap">Exchange Crypto</Link>
                   </Nav.Link>
-                  <Nav.Link href="#deets" className="gift3" onClick={linkShow}>
+                  <Nav.Link href="#About_main" className="gift3" onClick={linkShow}>
                     <Link to="/About_main">About</Link>
                   </Nav.Link>
-                  <Nav.Link href="#memes" className="gift3" onClick={linkShow}>
+                  <Nav.Link href="#nft" className="gift3" onClick={linkShow}>
                     <Link to='/nft' className='nav_linkk'>NFT</Link>
                   </Nav.Link>
-                  <Nav.Link id="Nftop" className="gift3">
+                  <Nav.Link id="#Nftop" href="#memes" className="gift3" onClick={linkShow}>
                     <Link to='/nftop' className='nav_linkk'>NFT open Market</Link>
                   </Nav.Link>
 
-                  <Nav.Link id="L.P Farming" >
+                  <Nav.Link id="L.P Farming" href="#lpfar" onClick={linkShow}>
                 <Link to='/lpfar' className='nav_linkk'>L.P Farming</Link>
               </Nav.Link>
-              <Nav.Link id="Swap Exchange" >
+              <Nav.Link id="Swap Exchange" href="#sawp" onClick={linkShow}>
                 <Link to='/sawp' className='nav_linkk'>Swap Exchange  </Link>
               </Nav.Link>
-              <Nav.Link id="Wonder Land" >
+              <Nav.Link id="Wonder Land" href="#wonder" onClick={linkShow}>
                 <Link to='/wonder' className='nav_linkk'>Wonder Land  </Link>
               </Nav.Link>
-              <Nav.Link id="How It Work"  >
+              <Nav.Link id="How It Work"  href="#Work_main" onClick={linkShow}>
                 <Link to="/Work_main">How It Work</Link>
               </Nav.Link>
-              <Nav.Link id="FAQ">
+              <Nav.Link id="FAQ" href="#Faq_main" onClick={linkShow}>
                 <Link to="/Faq_main">FAQ</Link>
               </Nav.Link>
                 </Nav>
