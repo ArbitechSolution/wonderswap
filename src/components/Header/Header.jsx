@@ -20,54 +20,61 @@ function Header() {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
   const linkShow = () => setShow(false)
+  const [isColor, setIsColor] = useState('')
   return (
-    <div className="d-flex justify-content-center align-items-center" style={{ width: '100%' }}>
-      <Navbar className="nev" collapseOnSelect expand="lg" bg="" variant="">
+    <div className="d-flex justify-content-center align-items-center " style={{ width: '100%' }}>
+      <Navbar className="nev " collapseOnSelect expand="lg" bg="" variant="" >
         <Container>
           <Navbar.Brand className="brand" href="#home">
             <Link to="/">
-              <img src="logo.png" alt="" style={{width: '50px'}}/>
+              <img src="logo.png" alt="" style={{ width: '50px' }} />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          {/* <>
-            <Button variant="primary" onClick={handleShow} className="">
-              Toggle static offcanvas
-            </Button>
+          <Navbar.Collapse id="responsive-navbar-nav " className=' justify-content-center'>
+            <Nav className=''>
 
-            <Offcanvas show={show} onHide={handleClose} backdrop="static">
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                I will not close if you click outside of me.
-              </Offcanvas.Body>
-            </Offcanvas>
-          </> */}
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              {/* <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-            </Nav>
-            <Nav>
-              <Nav.Link  className="gift gift3 m-0">
-                <Link to="/swap">
-                  <FaGift className="gift"></FaGift> How To Win $100+
-                </Link>
+              <Nav.Link id="Exchange Crypto" onClick={() => setIsColor('Exchange Crypto')}
+                className={isColor == "Exchange Crypto" ? "a-active" : "a"}
+              >
+                <Link to="/swap">Exchange Crypto</Link>
               </Nav.Link>
-              <Nav.Link  className="gift3 work">
-                <Link to="/Work_main">How It Work</Link>
-              </Nav.Link>
-              <Nav.Link  className="gift3">
+              <Nav.Link id="About" onClick={() => setIsColor('About')}
+                className={isColor == "About" ? "a-active" : "a"}>
                 <Link to="/About_main">About</Link>
               </Nav.Link>
-              <Nav.Link  className="gift3">
+              <Nav.Link id="Nft" onClick={() => setIsColor('Nft')}
+                className={isColor == "Nft" ? "a-active" : "a"}>
+                <Link to='/nft' className='nav_linkk'>NFT</Link>
+              </Nav.Link>
+              <Nav.Link id="Nftop" onClick={() => setIsColor('Nftop')}
+                className={isColor == "Nftop" ? "a-active" : "a"}>
+                <Link to='nftop' className='nav_linkk'>NFT open Market</Link>
+              </Nav.Link>
+              <Nav.Link id="L.P Farming" onClick={() => setIsColor('L.P Farming')}
+                className={isColor == "L.P Farming" ? "a-active" : "a"}>
+                <Link to='lpfar' className='nav_linkk'>L.P Farming</Link>
+              </Nav.Link>
+              <Nav.Link id="Swap Exchange" onClick={() => setIsColor('Swap Exchange')}
+                className={isColor == "Swap Exchange" ? "a-active" : "a"}>
+                <Link to='sawp' className='nav_linkk'>Swap Exchange  </Link>
+              </Nav.Link>
+              <Nav.Link id="Wonder Land" onClick={() => setIsColor('Wonder Land')}
+                className={isColor == "Wonder Land" ? "a-active" : "a"}>
+                <Link to='wonder' className='nav_linkk'>Wonder Land  </Link>
+              </Nav.Link>
+              <Nav.Link id="How It Work" onClick={() => setIsColor('How It Work')}
+                className={isColor == "How It Work" ? "a-active" : "a"} >
+                <Link to="/Work_main">How It Work</Link>
+              </Nav.Link>
+              <Nav.Link id="FAQ" onClick={() => setIsColor('FAQ')}
+                className={isColor == "FAQ" ? "a-active" : "a"}>
                 <Link to="/Faq_main">FAQ</Link>
               </Nav.Link>
               {/* <Nav.Link className="gift3">
                 <Link to="/pool">Pool</Link>
               </Nav.Link> */}
-              
+
               {/* <NavDropdown title="Info" id="collasible-nav-dropdown" className="gift3">
                 <NavDropdown.Item href="#action/3.2">
                   <Link to="/Overview_main">Overview</Link>
@@ -96,7 +103,7 @@ function Header() {
               <Offcanvas.Header closeButton>
                 <Navbar.Brand className="brand2" href="#home" onClick={linkShow}>
                   <Link to="/" >
-                    <img src="logo.png" alt="" style={{width: '50px'}}/>
+                    <img src="logo.png" alt="" style={{ width: '50px' }} />
                   </Link>
                 </Navbar.Brand>
                 <Offcanvas.Title></Offcanvas.Title>
@@ -105,33 +112,33 @@ function Header() {
                 <Nav>
                   {/* <Nav.Link href="#deets" className='gift gift3 m-0'><FaGift className='gift'></FaGift> How To Win $100+</Nav.Link> */}
                   <Nav.Link href="#deets" className="gift3" onClick={linkShow}>
-                    <Link to="/Work_main">
-                      <FaHome className="hme"></FaHome>How It Work
-                    </Link>
+                    <Link to="/swap">Exchange Crypto</Link>
                   </Nav.Link>
                   <Nav.Link href="#deets" className="gift3" onClick={linkShow}>
-                    <Link to="/About_main">
-                      <FaGamepad className="hme"></FaGamepad>About
-                    </Link>
+                    <Link to="/About_main">About</Link>
                   </Nav.Link>
-                  <Nav.Link eventKey={2} href="#memes" className="gift3" onClick={linkShow}>
-                    <Link to="/Faq_main">
-                      <FaGamepad className="hme"></FaGamepad>FAQ
-                    </Link>
+                  <Nav.Link href="#memes" className="gift3" onClick={linkShow}>
+                    <Link to='/nft' className='nav_linkk'>NFT</Link>
+                  </Nav.Link>
+                  <Nav.Link id="Nftop" className="gift3">
+                    <Link to='/nftop' className='nav_linkk'>NFT open Market</Link>
                   </Nav.Link>
 
-                  <NavDropdown title="Info" id="collasible-nav-dropdown" className="gift3">
-                    <TbArrowsRightLeft className="hme"></TbArrowsRightLeft>
-                    <NavDropdown.Item href="#action/3.2" onClick={linkShow}>
-                      <Link to="/Overview_main">Overview</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3" onClick={linkShow}>
-                      <Link to="/Pool_main">Pools</Link>{' '}
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3" onClick={linkShow}>
-                      <Link to="/Token_main">Tokens</Link>{' '}
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <Nav.Link id="L.P Farming" >
+                <Link to='/lpfar' className='nav_linkk'>L.P Farming</Link>
+              </Nav.Link>
+              <Nav.Link id="Swap Exchange" >
+                <Link to='/sawp' className='nav_linkk'>Swap Exchange  </Link>
+              </Nav.Link>
+              <Nav.Link id="Wonder Land" >
+                <Link to='/wonder' className='nav_linkk'>Wonder Land  </Link>
+              </Nav.Link>
+              <Nav.Link id="How It Work"  >
+                <Link to="/Work_main">How It Work</Link>
+              </Nav.Link>
+              <Nav.Link id="FAQ">
+                <Link to="/Faq_main">FAQ</Link>
+              </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Offcanvas>

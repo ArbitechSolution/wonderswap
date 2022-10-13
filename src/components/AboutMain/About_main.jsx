@@ -1,4 +1,5 @@
 import React from 'react'
+import "./About.css"
 
 function About_main() {
   return (
@@ -8,20 +9,24 @@ function About_main() {
           <div class="row">
             <div class="col-md-7">
               <h1 className="mainHeadings">Future of Decentralized Exchange</h1>
-              <p class="para">
+              <br />
+              <p class="Apara">
                 Wondercoin supports a variety of the most popular digital currencies and has a variety of features that make it the best place to start trading With the intention of enhancing investor protection, a number of specialised blockchain security and auditing companies have teamed up with Wondercoin We at Wondercoin are Building the Future of Decentralized Exchanges.
               </p>
-              <p class="para">Wondercoin is the easiest place to buy and sell cryptocurrency.</p>
+              <p class="Apara">Wondercoin is the easiest place to buy and sell cryptocurrency.</p>
               <h2 className="mainHeadings">Wondercoin</h2>
-              <p class="para">
+              <br />
+              <p class="Apara text">
               The Wondercoin Token is a digital asset that connects the Wondercoin Platform and its core functionality. It serves as the official pair token on the platform and combines staking and incentives. Users will be able to trade and exchange their tokens for alternative assets with safety and ease after Wondercoin launches. Wondercoin will be the first digital money for common people, marking a significant advancement in the global use of cryptocurrencies.
               </p>
               <h2 className="mainHeadings">Has it been listed in any exchange?</h2>
-              <p class="para">
+              <br />
+              <p class="Apara">
               As of now it can be purchased through our website which can be linked to trust wallet, very soon it will be listed in DEX exchange and then token would be tradable, very soon it will be listed in many more exchanges.
               </p>
               <h2 className="mainHeadings">Which Wallets Supports Wondercoin?</h2>
-              <p class="para">
+              <br />
+              <p class="Apara">
               Many decentralised wallets, including MetaMask, TrustWallet, MathWallet, TokenPocket, WalletConnect, Binance Chain Wallet, and SafePal Walle, are fully compatible with Wondercoin and its token
               </p>
             </div>
@@ -209,9 +214,10 @@ function About_main() {
                   <b>Coin Support</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 Wondercoin supports a variety of the most popular digital currencies and has a variety of features that make it the best place to start trading. Wondercoin offers DeFi technologies so that enterprises and token owners can confidently acquire, exchange more than 1000 cryptocurrency and tokens.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>
@@ -223,9 +229,10 @@ function About_main() {
                   <b>Security</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 A number of specialised blockchain security and auditing businesses have partnered with Wondercoin with the goal of strengthening investor protection. The Wondercoin Security Protocol is an end-to-end transactional layer that supports digital non-fungible token payment infrastructure. With Wondercoin's ultra-protected servers, you may trade discreetly with the assurance that your money is secure.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>
@@ -241,9 +248,10 @@ function About_main() {
                   <b>Earning and Rewarding</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 Wondercoin is the best passive income project, offering various methods to earn. As a fundamental element of our diversified investing strategy, Wondercoin enables its clients to earn large risk-free income. The way Wondercoin is set up seeks to attack every aspect of the cryptocurrency market as it exists right now.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>
@@ -255,9 +263,10 @@ function About_main() {
                   <b>Cross chain Swapping</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 Wondercoin is a gateway that enables token transfers between the top blockchains in the world. It integrates cross chain swaps to provide traders access to multiple markets at once. Wondercoin enables trading operations across numerous chains and investment in projects running across particular chains.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>
@@ -272,9 +281,10 @@ function About_main() {
                   <b>Low fees</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 The fees at Wondercoin are among the lowest in the industry. A user will notice that 0.5% of their transaction is being taken away when they conduct a swap. Wondercoin follows a fee-free governance model and operates without any governance fees. Using miner fees, Swap encourages network security.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>
@@ -286,9 +296,10 @@ function About_main() {
                   <b>Easy to use</b>
                 </span>
                 <br />
-                <span style={{ color: '#a0789c' }}>
+                <br />
+                <p>
                 With Wondercoin You can Swap your Crypto Tokens Cross-Chain In Just One Tap. Wondercoin enables its users to swap native to native assets from one blockchain to another without needing to rely on a third party by utilising cross-chain communication across blockchains.
-                </span>
+                </p>
               </span>
               <p></p>
             </div>

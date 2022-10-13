@@ -29,6 +29,12 @@ import Pool_main from 'components/PoolMain/Pool_main'
 import Overview_main from 'components/OverviewMain/Overview_main'
 import Footer from 'components/Footer/Footer'
 import Token_main from 'components/TokenMain/Token_main'
+import Nft from 'components/Nft/Nft'
+import Nftopen from 'components/Nftopen/Nftopen'
+import Lpfarming from 'components/Lpfarming/Lpfarming'
+import Homee from 'components/Homee/Homee'
+import Swaapp from 'components/Swaapp/Swaapp'
+
 
 const AppWrapper = styled.div`
   display: flex;
@@ -132,7 +138,7 @@ export default function App() {
   }
 
   useGetDocumentTitlePrice()
-
+  const [isColor, setIsColor] = useState('')
   return (
     <Suspense fallback={null}>
       <HashRouter>
@@ -167,12 +173,18 @@ export default function App() {
                       <Route exact path="/add/:currencyIdA/:currencyIdB" component={RedirectDuplicateTokenIds} />
                       <Route exact strict path="/remove/:tokens" component={RedirectOldRemoveLiquidityPathStructure} />
                       <Route exact strict path="/" component={Home} />
+                      <Route exact path='/nft' component={Nft} />
+                      <Route exact path='/nftop' component={Nftopen} />
+                      <Route exact path='/lpfar' component={Lpfarming} />
+                      <Route exact path='/sawp' component={Homee}/>
+                      <Route exact path='/wonder' component={Swaapp}/> 
                       <Route path="/Work_main" component={Work_main} />
                       <Route path="/About_main" component={About_main} />
                       <Route path="/Faq_main" component={Faq_main} />
                       <Route path="/Overview_main" component={Overview_main} />
                       <Route path="/Pool_main" component={Pool_main} />
                       <Route path="/Token_main" component={Token_main} />
+
                       {/* <Route component={RedirectPathToSwapOnly} /> */}
                       <Marginer />
                     </BodyWrapper>

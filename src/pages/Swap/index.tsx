@@ -517,11 +517,11 @@ const Swap = () => {
         </div>
         <div className="col-md-6  py_0 heading mt-5">
           {/* <h1 class="heading_more"> */}
-          <h1 className=" display-3">More than a crypto exchange</h1>
-          <p className="more">We pick the best — you make a choice</p>
-          <p>
+          <h1 className=" display-34" style={{fontSize: '42px'}}>More than a crypto exchange</h1>
+          <p className="more" style={{fontSize: '22px'}}>We pick the best — you make a choice</p>
+          <p style={{fontSize: '22px'}}>
             TrustScore 4.3 on
-            <AiFillStar className="fa fa-star stars"></AiFillStar>Trustpilot
+            <AiFillStar className="fa fa-star stars" ></AiFillStar>Trustpilot
             <span className="span_fa">
               <AiFillStar></AiFillStar>
               <AiFillStar></AiFillStar>
